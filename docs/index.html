@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exam Prep Privacy Policy</title>
+<meta name="description" content="The privacy policy for Exam Prep, an offline exam-preparation tracker.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  /* ---------- tokens: bare :root is the complete LIGHT palette ---------- */
+  :root {
+    --bg:        #F7F4EF;
+    --surface:   #FFFFFF;
+    --surface-2: #F0EBE2;
+    --border:    #E3DBCD;
+    --rule:      #EAE3D6;
+    --ink:       #1B1714;
+    --ink-soft:  #574F47;
+    --muted:     #8A8075;
+    --accent:    #8A5A12;   /* deep gold — legible on light ground */
+    --accent-line:#D8B270;
+    --good:      #3F7D5F;
+    --focus:     #8A5A12;
+    color-scheme: light;
+  }
+  /* system-dark (no explicit choice) — override tokens only */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:        #141110;
+      --surface:   #1E1A17;
+      --surface-2: #251F1A;
+      --border:    #2A2422;
+      --rule:      #241F1C;
+      --ink:       #F0ECE6;
+      --ink-soft:  #C9C1B8;
+      --muted:     #8A8380;
+      --accent:    #E8B869;
+      --accent-line:#4A3B24;
+      --good:      #5DCAA5;
+      --focus:     #E8B869;
+      color-scheme: dark;
+    }
+  }
+  /* explicit dark choice wins in the other direction too */
+  :root[data-theme="dark"] {
+    --bg:        #141110;
+    --surface:   #1E1A17;
+    --surface-2: #251F1A;
+    --border:    #2A2422;
+    --rule:      #241F1C;
+    --ink:       #F0ECE6;
+    --ink-soft:  #C9C1B8;
+    --muted:     #8A8380;
+    --accent:    #E8B869;
+    --accent-line:#4A3B24;
+    --good:      #5DCAA5;
+    --focus:     #E8B869;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .wrap {
+    max-width: 41rem;
+    margin: 0 auto;
+    padding: clamp(2.5rem, 6vw, 5rem) clamp(1.25rem, 5vw, 2.5rem) 4rem;
+  }
+
+  /* ---------- header ---------- */
+  .masthead {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .mark {
+    width: 30px;
+    height: 30px;
+    flex: none;
+    display: block;
+  }
+  .wordmark {
+    font-weight: 600;
+    font-size: 0.98rem;
+    letter-spacing: 0.02em;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: clamp(2rem, 6vw, 2.85rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    margin: 1.9rem 0 0.9rem;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.76rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0;
+  }
+  .meta span { white-space: nowrap; }
+  .meta i { font-style: normal; color: var(--accent-line); padding: 0 0.5em; }
+
+  .rule {
+    height: 1px;
+    background: var(--rule);
+    border: 0;
+    margin: 2.4rem 0;
+  }
+
+  .lede {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    margin: 0 0 2.6rem;
+    text-wrap: pretty;
+  }
+
+  /* ---------- the answer panel ---------- */
+  .answer {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.7rem 1.6rem 1.75rem;
+    margin: 0 0 3.2rem;
+  }
+  .answer .eyebrow { display: block; margin-bottom: 0.5rem; }
+  .answer .big {
+    font-weight: 600;
+    font-size: clamp(2.6rem, 11vw, 3.6rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--good);
+    margin: 0 0 0.7rem;
+  }
+  .answer p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 1rem;
+  }
+
+  /* ---------- sections ---------- */
+  section { margin: 0 0 2.9rem; }
+  section .eyebrow { display: block; margin-bottom: 0.55rem; }
+  h2 {
+    font-weight: 600;
+    font-size: 1.28rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.7rem;
+    text-wrap: balance;
+  }
+  section p { margin: 0 0 0.9rem; color: var(--ink-soft); }
+  section p:last-child { margin-bottom: 0; }
+
+  ul {
+    margin: 0 0 1rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  li {
+    position: relative;
+    padding-left: 1.4rem;
+    color: var(--ink-soft);
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: 0.15rem;
+    top: 0.72em;
+    width: 6px;
+    height: 6px;
+    border-radius: 2px;
+    background: var(--accent-line);
+  }
+
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  a:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ---------- footer ---------- */
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  footer p { margin: 0.3rem 0; }
+  .footer-mono {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.74rem;
+    letter-spacing: 0.06em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="masthead">
+      <svg class="mark" viewBox="0 0 108 108" role="img" aria-label="Exam Prep">
+        <rect width="108" height="108" rx="24" fill="#141110"/>
+        <path d="M28 82 L54 34 L80 82 Z" fill="#E8B869"/>
+        <path d="M54 58 L46 82 L62 82 Z" fill="#141110"/>
+        <path d="M52.5 20 L55.5 20 L55.5 35 L52.5 35 Z" fill="#E8B869"/>
+        <path d="M54 20 L67 25 L54 30 Z" fill="#E8B869"/>
+      </svg>
+      <span class="wordmark">Exam Prep</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <span>LAST UPDATED 2 SEPTEMBER 2026</span><i>/</i><span>APP VERSION 1.0</span>
+    </p>
+  </header>
+
+  <hr class="rule">
+
+  <p class="lede">
+    Exam Prep is designed to work entirely offline. This policy explains exactly
+    what data the app handles and how.
+  </p>
+
+  <div class="answer">
+    <span class="eyebrow">Data we collect</span>
+    <p class="big">Nothing.</p>
+    <p>
+      Exam Prep does not collect, transmit, or share any personal data with us or
+      any third party. The app has no servers, no analytics, no advertising, and
+      requests no internet permission.
+    </p>
+  </div>
+
+  <section>
+    <span class="eyebrow">On your device</span>
+    <h2>Data stored on your device</h2>
+    <p>
+      The app stores the following information locally on your phone only. It is
+      never transmitted anywhere:
+    </p>
+    <ul>
+      <li>Your name and exam preparation details (exam name, date, subjects)</li>
+      <li>Test scores and study progress you log</li>
+      <li>Your custom timetable and study schedule</li>
+      <li>App preferences (theme, notification settings)</li>
+    </ul>
+    <p>
+      This data never leaves your device unless you choose to export it yourself.
+      Uninstalling the app permanently deletes all of it.
+    </p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Optional permission</span>
+    <h2>Notification access</h2>
+    <p>
+      If you enable the optional Focus Mode feature, Exam Prep requests Android's
+      Notification Access permission. It is used solely to temporarily suppress
+      notifications from apps you select, during time periods you schedule.
+    </p>
+    <p>
+      The app only checks which app sent a notification &mdash; not its content
+      &mdash; to decide whether to suppress it. No notification content is ever
+      read, stored, or transmitted. Phone calls and SMS or messaging apps cannot
+      be muted under any circumstance. This permission can be revoked at any time
+      in your phone's Settings.
+    </p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Not requested</span>
+    <h2>Camera &amp; photos</h2>
+    <p>Exam Prep does not currently request camera or photo access.</p>
+  </section>
+
+  <section>
+    <span class="eyebrow">Get in touch</span>
+    <h2>Contact us</h2>
+    <p>
+      If you have questions about this privacy policy, contact
+      <a href="mailto:anubhavk42@gmail.com">anubhavk42@gmail.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    <p class="footer-mono">EXAM PREP &middot; OFFLINE EXAM-PREPARATION TRACKER</p>
+    <p>This page mirrors the privacy policy shown inside the app under Settings &rarr; About.</p>
+  </footer>
+</div>
+</body>
+</html>

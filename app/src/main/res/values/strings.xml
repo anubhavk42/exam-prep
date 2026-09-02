@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Exam Prep</string>
+
+    <!-- App shortcuts (long-press launcher icon) -->
+    <string name="shortcut_log_score_short">Log Score</string>
+    <string name="shortcut_log_score_long">Log a practice test</string>
+    <string name="shortcut_add_slot_short">Add Slot</string>
+    <string name="shortcut_add_slot_long">Add a timetable slot</string>
+
+    <!-- Common actions -->
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_add">Add</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_next">Next →</string>
+    <string name="action_back">← Back</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome!</string>
+    <string name="onboarding_welcome_subtitle">Let\'s set up your personal exam dashboard.</string>
+    <string name="onboarding_name_hint">Your first name</string>
+    <string name="onboarding_try_demo">Try demo with sample data</string>
+    <string name="onboarding_exam_question">Which exam are you preparing for?</string>
+    <string name="onboarding_exam_subtitle">Pick a preset or type your own. Subjects fill in automatically and stay editable.</string>
+    <string name="onboarding_custom_exam_label">Or enter a custom exam name</string>
+    <string name="onboarding_exam_date_question">When is your exam?</string>
+    <string name="onboarding_exam_target_date">Exam Target Date</string>
+    <string name="onboarding_change">Change</string>
+    <string name="onboarding_your_subjects">Your subject list (%1$d)</string>
+    <string name="onboarding_add_subject">Add subject +</string>
+    <string name="onboarding_start_prep">Start my prep 🚀</string>
+
+    <!-- Home -->
+    <string name="home_greeting">Welcome back, %1$s</string>
+    <string name="home_days_remaining">DAYS REMAINING</string>
+    <string name="home_whats_next">WHAT\'S NEXT</string>
+    <string name="home_needs_attention">NEEDS ATTENTION</string>
+    <string name="home_revision_due">REVISION DUE</string>
+    <string name="home_day_streak">Day streak</string>
+    <string name="home_personal_best">Personal best</string>
+    <string name="home_todays_goals">TODAY\'S GOALS</string>
+    <string name="home_log_test">Log a practice test</string>
+    <string name="home_overall_mastery">OVERALL MASTERY</string>
+    <string name="home_todays_recap">TODAY\'S RECAP</string>
+    <string name="demo_mode_title">DEMO MODE</string>
+    <string name="demo_mode_subtitle">Sample data for exploration</string>
+    <string name="demo_mode_exit">Exit Demo</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_profile">Profile</string>
+    <string name="settings_section_exam">Exam Details</string>
+    <string name="settings_section_reminders">Reminders</string>
+    <string name="settings_section_home">Home Screen</string>
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_section_wellness">Wellness Habits</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_section_data">Data &amp; Storage</string>
+    <string name="settings_section_language">App Language</string>
+    <string name="settings_your_name">Your Name</string>
+    <string name="settings_privacy_policy">Privacy Policy</string>
+    <string name="settings_invite_friends">Invite Friends</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_hindi">हिन्दी</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">Follow system</string>
+</resources>

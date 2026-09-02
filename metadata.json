@@ -1,0 +1,6 @@
+{
+  "name": "Exam Prep",
+  "description": "Personal Pharmacy Exam Preparation Tracker with offline performance analytics, stream-specific subject presets, daily study checklist, and local score tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

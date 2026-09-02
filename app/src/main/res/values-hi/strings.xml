@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">परीक्षा तैयारी</string>
+
+    <!-- App shortcuts -->
+    <string name="shortcut_log_score_short">स्कोर दर्ज करें</string>
+    <string name="shortcut_log_score_long">अभ्यास टेस्ट दर्ज करें</string>
+    <string name="shortcut_add_slot_short">स्लॉट जोड़ें</string>
+    <string name="shortcut_add_slot_long">टाइमटेबल स्लॉट जोड़ें</string>
+
+    <!-- Common actions -->
+    <string name="action_save">सहेजें</string>
+    <string name="action_cancel">रद्द करें</string>
+    <string name="action_add">जोड़ें</string>
+    <string name="action_delete">हटाएँ</string>
+    <string name="action_next">आगे →</string>
+    <string name="action_back">← पीछे</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">स्वागत है!</string>
+    <string name="onboarding_welcome_subtitle">आइए आपका व्यक्तिगत परीक्षा डैशबोर्ड सेट करें।</string>
+    <string name="onboarding_name_hint">आपका पहला नाम</string>
+    <string name="onboarding_try_demo">नमूना डेटा के साथ डेमो आज़माएँ</string>
+    <string name="onboarding_exam_question">आप किस परीक्षा की तैयारी कर रहे हैं?</string>
+    <string name="onboarding_exam_subtitle">कोई प्रीसेट चुनें या स्वयं टाइप करें। विषय अपने आप भर जाते हैं और संपादन योग्य रहते हैं।</string>
+    <string name="onboarding_custom_exam_label">या कोई कस्टम परीक्षा नाम दर्ज करें</string>
+    <string name="onboarding_exam_date_question">आपकी परीक्षा कब है?</string>
+    <string name="onboarding_exam_target_date">परीक्षा लक्ष्य तिथि</string>
+    <string name="onboarding_change">बदलें</string>
+    <string name="onboarding_your_subjects">आपकी विषय सूची (%1$d)</string>
+    <string name="onboarding_add_subject">विषय जोड़ें +</string>
+    <string name="onboarding_start_prep">मेरी तैयारी शुरू करें 🚀</string>
+
+    <!-- Home -->
+    <string name="home_greeting">वापसी पर स्वागत है, %1$s</string>
+    <string name="home_days_remaining">शेष दिन</string>
+    <string name="home_whats_next">आगे क्या</string>
+    <string name="home_needs_attention">ध्यान चाहिए</string>
+    <string name="home_revision_due">पुनरावृत्ति बाकी</string>
+    <string name="home_day_streak">दिन की निरंतरता</string>
+    <string name="home_personal_best">व्यक्तिगत सर्वश्रेष्ठ</string>
+    <string name="home_todays_goals">आज के लक्ष्य</string>
+    <string name="home_log_test">अभ्यास टेस्ट दर्ज करें</string>
+    <string name="home_overall_mastery">समग्र दक्षता</string>
+    <string name="home_todays_recap">आज का सारांश</string>
+    <string name="demo_mode_title">डेमो मोड</string>
+    <string name="demo_mode_subtitle">अन्वेषण हेतु नमूना डेटा</string>
+    <string name="demo_mode_exit">डेमो से बाहर निकलें</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_section_profile">प्रोफ़ाइल</string>
+    <string name="settings_section_exam">परीक्षा विवरण</string>
+    <string name="settings_section_reminders">अनुस्मारक</string>
+    <string name="settings_section_home">होम स्क्रीन</string>
+    <string name="settings_section_appearance">दिखावट</string>
+    <string name="settings_section_wellness">स्वास्थ्य आदतें</string>
+    <string name="settings_section_about">परिचय</string>
+    <string name="settings_section_data">डेटा और भंडारण</string>
+    <string name="settings_section_language">ऐप भाषा</string>
+    <string name="settings_your_name">आपका नाम</string>
+    <string name="settings_privacy_policy">गोपनीयता नीति</string>
+    <string name="settings_invite_friends">मित्रों को आमंत्रित करें</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_hindi">हिन्दी</string>
+    <string name="theme_light">उजला</string>
+    <string name="theme_dark">गहरा</string>
+    <string name="theme_system">सिस्टम के अनुसार</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="log_score"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_log_score"
+        android:shortcutShortLabel="@string/shortcut_log_score_short"
+        android:shortcutLongLabel="@string/shortcut_log_score_long">
+        <intent
+            android:action="com.anubhav.diprep.action.SHORTCUT_LOG_SCORE"
+            android:targetPackage="com.anubhav.diprep"
+            android:targetClass="com.anubhav.diprep.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="add_time_slot"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_add_slot"
+        android:shortcutShortLabel="@string/shortcut_add_slot_short"
+        android:shortcutLongLabel="@string/shortcut_add_slot_long">
+        <intent
+            android:action="com.anubhav.diprep.action.SHORTCUT_ADD_SLOT"
+            android:targetPackage="com.anubhav.diprep"
+            android:targetClass="com.anubhav.diprep.MainActivity" />
+    </shortcut>
+
+</shortcuts>
