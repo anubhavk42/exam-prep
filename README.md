@@ -2,6 +2,8 @@
 
 **A fully offline app that helps students preparing for any competitive exam build a consistent study routine and track their real readiness — without needing internet or draining their phone's battery.**
 
+**▶️ [Try the live demo](https://appetize.io/app/b_mppjoq6ubkzfmzpuz2vfxsvlki)** — run the app in your browser, no install needed.
+
 ## The problem
 
 Students preparing for competitive exams — government jobs, licensing exams like Drug Inspector, UPSC, banking — juggle a mess of disconnected tools: a physical notebook for their timetable, a notes app for mistakes, WhatsApp reminders from parents, and generic study apps that assume a fixed syllabus and constant internet access.
