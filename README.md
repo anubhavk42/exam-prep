@@ -4,6 +4,23 @@
 
 **▶️ [Try the live demo](https://appetize.io/app/b_mppjoq6ubkzfmzpuz2vfxsvlki)** — run the app in your browser, no install needed.
 
+## Screenshots
+
+<table>
+  <tr>
+    <td align="center"><img src="docs/screenshots/home.png" width="220" alt="Home — exam countdown, what's next, streak and alerts" /><br/><sub><b>Home</b> — countdown, what's next, alerts</sub></td>
+    <td align="center"><img src="docs/screenshots/subjects.png" width="220" alt="Subjects — mastery rings per subject" /><br/><sub><b>Subjects</b> — mastery at a glance</sub></td>
+    <td align="center"><img src="docs/screenshots/timetable.png" width="220" alt="Timetable — today's schedule and wellness habits" /><br/><sub><b>Timetable</b> — daily schedule & habits</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/weekly.png" width="220" alt="Weekly progress — week-over-week trends" /><br/><sub><b>Weekly trends</b> — this week vs last</sub></td>
+    <td align="center"><img src="docs/screenshots/heatmap.png" width="220" alt="Consistency heatmap over 10 weeks" /><br/><sub><b>Heatmap</b> — 10-week consistency</sub></td>
+    <td></td>
+  </tr>
+</table>
+
+<sub>Screens shown with Demo Mode sample data.</sub>
+
 ## The problem
 
 Students preparing for competitive exams — government jobs, licensing exams like Drug Inspector, UPSC, banking — juggle a mess of disconnected tools: a physical notebook for their timetable, a notes app for mistakes, WhatsApp reminders from parents, and generic study apps that assume a fixed syllabus and constant internet access.
