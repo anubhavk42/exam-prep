@@ -5,6 +5,7 @@ import android.appwidget.AppWidgetManager
 import android.content.ComponentName
 import android.content.Context
 import android.content.Intent
+import android.view.View
 import android.widget.RemoteViews
 import com.anubhav.diprep.MainActivity
 import com.anubhav.diprep.R
@@ -17,6 +18,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 
 /**
  * Home-screen widget: days-to-exam + current streak.
@@ -49,21 +51,33 @@ object CountdownWidget {
             val dao = AppDatabase.getDatabase(appContext).appDao()
 
             val days = DateUtils.daysUntil(profile.examDate)
+
+            val logs = dao.getAllTaskLogsDesc().first()
+            val slots = dao.getAllSlots().first()
+            val completions = dao.getCompletionsSince("2020-01-01").first()
+
             val streak = if (profile.onboardingDone) {
-                StreakCalculator.calculate(
-                    logs = dao.getAllTaskLogsDesc().first(),
-                    slots = dao.getAllSlots().first(),
-                    completions = dao.getCompletionsSince("2020-01-01").first(),
-                    profile = profile
-                )
+                StreakCalculator.calculate(logs, slots, completions, profile)
             } else 0
+
+            // CTA shows only while there's still something to do today. Once the
+            // day is complete it's hidden entirely so the right column drops to a
+            // single line and can never overflow.
+            val today = LocalDate.now()
+            val todayIso = today.toString()
+            val todayComplete = StreakCalculator.isDayComplete(
+                slotsForDow = slots.filter { it.dayOfWeek == today.dayOfWeek.value },
+                completedSlotIds = completions.filter { it.dateISO == todayIso }
+                    .map { it.slotId }.toSet(),
+                taskLog = logs.firstOrNull { it.dateISO == todayIso },
+                profile = profile
+            )
+            val showCta = !profile.onboardingDone || streak == 0 || !todayComplete
 
             val views = RemoteViews(appContext.packageName, R.layout.widget_countdown).apply {
                 setTextViewText(R.id.widget_days, days.toString())
-                setTextViewText(
-                    R.id.widget_streak,
-                    if (streak > 0) "🔥 $streak day streak" else "Start your streak"
-                )
+                setTextViewText(R.id.widget_streak_num, streak.toString())
+                setViewVisibility(R.id.widget_cta, if (showCta) View.VISIBLE else View.GONE)
                 setOnClickPendingIntent(R.id.widget_root, openAppIntent(appContext))
             }
             ids.forEach { manager.updateAppWidget(it, views) }

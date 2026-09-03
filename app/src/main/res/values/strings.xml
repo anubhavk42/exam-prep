@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Exam Prep</string>
 
+    <!-- Home-screen widget -->
+    <string name="widget_description">Days left to your exam and your current streak</string>
+
     <!-- App shortcuts (long-press launcher icon) -->
     <string name="shortcut_log_score_short">Log Score</string>
     <string name="shortcut_log_score_long">Log a practice test</string>

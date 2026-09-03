@@ -1222,3 +1222,35 @@ standard "tap" feedback type throughout, consistent everywhere)
 
 Add "Haptic Feedback" toggle row in Settings, placed near other 
 app-wide preference toggles (e.g. near Appearance).
+
+## Bug fix + redesign: Home Screen Widget text clipping
+
+Confirmed bug: "Start your streak" text is being clipped at the 
+bottom of the widget — the stacked vertical layout (number, label, 
+streak text) exceeds the widget's rendered height, and content 
+overflows/gets cut off rather than the widget resizing to fit.
+
+### New layout — split design
+Replace the stacked vertical layout with a horizontal split:
+- Left section: large days-remaining number (36sp, gold #E8B869, 
+  bold) with "DAYS LEFT" label below it (9sp, muted, uppercase)
+- Thin 1dp vertical divider (#2A2422)
+- Right section: streak row with flame emoji + streak number (18sp 
+  bold, text primary) + "day streak" label (10sp muted), and below 
+  that a small CTA line "Tap to start today →" (11sp, gold) shown 
+  ONLY when streak is 0 or today's habits aren't done yet — hide 
+  this CTA line entirely once today is complete, to avoid the same 
+  overflow problem recurring.
+
+### Sizing fix
+- Set the widget's minHeight appropriately in the AppWidgetProviderInfo 
+  XML (or Glance's GlanceAppWidget size definitions) to comfortably 
+  fit this new horizontal layout — typically 2x1 grid cells is 
+  sufficient for this content, don't undersize it
+- Ensure the Glance/RemoteViews layout uses proper Row-based 
+  composition (not a tall Column that can overflow) so content 
+  naturally fits within the horizontal space rather than needing to 
+  fit vertically
+- Test that this renders correctly at the widget's minimum resizable 
+  size, not just its default size, since users can resize widgets 
+  smaller after placing them

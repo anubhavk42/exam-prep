@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">परीक्षा तैयारी</string>
 
+    <!-- Home-screen widget -->
+    <string name="widget_description">परीक्षा में शेष दिन और आपकी वर्तमान निरंतरता</string>
+
     <!-- App shortcuts -->
     <string name="shortcut_log_score_short">स्कोर दर्ज करें</string>
     <string name="shortcut_log_score_long">अभ्यास टेस्ट दर्ज करें</string>
