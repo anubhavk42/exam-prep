@@ -109,8 +109,10 @@ All in [`config.py`](config.py):
 - **Lighter / faster / cooler** (great for a weak laptop or phone): lower
   `N_EMBD`, `N_LAYER`, `BLOCK_SIZE`, and `MAX_ITERS`.
 - **Smarter / slower / warmer**: raise them, and give it more training text.
-- `MAX_ITERS` is the main "how long does it run" dial. Start with `500` for a
-  quick test; `3000`–`5000` gives a nicer result on the bundled text.
+- `MAX_ITERS` is the main "how long does it run" dial. Use `300` for a quick
+  test and `~1200` (the default) for the bundled sample. Going higher only helps
+  once you feed it a **larger** `input.txt` — on the tiny bundled text more steps
+  just deepen the memorising/overfitting described above.
 
 ## What this is *not*
 
