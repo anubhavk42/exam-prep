@@ -1,0 +1,12 @@
+# The ONLY dependency for this project.
+#
+# We use the CPU build of PyTorch so nothing needs a GPU and nothing
+# overheats. Install it with:
+#
+#   pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cpu
+#
+# (The --index-url part tells pip to grab the smaller CPU-only build.
+#  If you leave it off, pip may download a much larger GPU build.)
+#
+# numpy comes along automatically as a dependency of torch.
+torch>=2.0

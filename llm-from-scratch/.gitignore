@@ -1,0 +1,7 @@
+# Trained model weights — a build artifact you generate locally by running
+# 03_mini_gpt.py. Not committed; each person trains their own.
+model.pt
+
+# Python caches
+__pycache__/
+*.pyc
